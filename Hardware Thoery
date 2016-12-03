@@ -1,0 +1,39 @@
+The Equivalent circuit can be divided into 5 parts, namely:
+1.	Microcontroller
+2.	IR transmitter-receiver pair
+3.	LDR circuit
+4.	LM 324 assembly
+5.	Power LED 
+
+Microcontroller:
+The circuit’s heart is “Microcontroller”. We are planning to use Atmega32 development board in our projects due to following features:
+1.	High performance, Low-power AVR *-bit Microcontroller
+2.	Non-volatile Program and Data memories
+-1024 EEPROM
+    (Endurance: 100k write/erase cycles)
+ -32K bytes of In-System Self-Programmable Flash
+    (Endurance: 10k write/erase cycles)
+3.	I/O and packages
+•	32 Programmable I/O  Lines
+•	40 –pin PDIP ,44-lead TQFP and 44-pad QFN/MLF
+        4.  Speed Grades
+•	-0-8 MHz for Atmega32L
+•	-0-16 MHz for Atmega32
+        5. Special Microcontroller Features
+•	Internal Calibrated RC Oscillator
+•	External and Internal  Interrupt Sources
+•	Power –on Reset and Programmable Brown -out Detection
+         6. Power Consumption at 1 MHz, 3V, 25 ‘C for ATmega32L
+•	Active:1.1mA
+•	Idle Mode: 0.35 mA
+•	Power-down Mode:< 1uA 
+
+LDR Circuit
+The LDR circuit is the light-dependent sensor which increases the resistance of path as the intensity of the incident decreases. This property is used in the project to distinguish between day and night
+LM324 Assembly
+It is an integrated chip(IC) which consists of quad-op-amp (4 op amps), which acts as comparator for the inputs on the inverting and non-inverting terminals. The basic purpose of LM324 is to convert the analog value of output of IR sensors to a digital form i.e. 0V or +5V, which can be detected by the input/output pins of microcontroller.
+IR Transmitter-Receiver Pair
+The infrared transmitter LED is linked across a 5V supply in series with a resistor of 270 ohm, while the infrared receiver photo-diode is inversely connected across the 5V supply through a resistor of 10K. The IR transmitter-receiver module that is implemented in the model has a range of 10cm. The purpose of the IR pair is to sense the vehicles and correspondily light the required power LEDs. In a practical implementation, IR sensors must have a sufficient range to detect vehicles. The IR sensors are placed just before the LED posts to light the streets just before the vehicle reached a particular point on the street.
+Power LEDs Circuit
+The purpose of using power LEDs is to enlighten with minimum resources and less power consuming elements. A reflector along with the power LED can illuminate an enough amount of space, if a proper voltage level is given to the LEDs. The terminals of the power LEDs are connected to the common ground and the PORTD pins (output) of the microcontroller.
+
