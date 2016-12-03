@@ -1,0 +1,9 @@
+There seems to be a consensus that the depletion of fossil fuels is following a fairly impressive slope. Lighting consumes for around 20% of the world's total Electrical energy. Classic outdoor light systems like streetlight, skywalks, and corridor are widely spread out in around the world while they are inefficient regarding cost and electricity consumption. These are controlled with photocell/LDR or timer and there is no remote connection or monitoring or information about energy consumption. Therefore, the efficient lighting can save lots of energy.
+As a matter of fact, the trending demand of alternative sources of energy is required to growing demands of the people.This can be achieved in two ways:
+•	Finding an alternative source to supply the power,or,
+•	By reducing the energy consumption of the present resources available.
+This project hereby supports the second statement.
+The basic idea of our project is the study and implementation of streets of streets with controlled lightening with microcontroller. The illumination of roads is done by power LEDs instead of the halogen lamps. The system here implemented to every combination of vehicles in a particular street at night. Heavy traffic conditions are also considered accordingly.
+Motivation
+The driving force behind choosing the smart lightening system as our project is to offer better, more specialized services which can improve the quality of life of the citizens while promoting sustainability. With the rising costs of energy, combined with increased environmental and regulatory pressures toward energy efficiency, reducing power consumption becomes the sole purpose of this project.
+
