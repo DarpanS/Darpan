@@ -1,0 +1,30 @@
+https://www.youtube.com/watch?v=JYkdLp0GrM0&feature=youtu.be
+Code for light sensor and street light control using Arduino is given below :
+
+int Adc_channel = A0; // select the input pin for the potentiometer
+int output_pin = 13; // select the pin for the LED
+int light_value = 0; // variable to store the value coming from the sensor
+
+void setup()
+{
+// declare the ledPin as an OUTPUT:
+pinMode(output_pin, OUTPUT);
+}
+
+void loop() {
+// read the value from the sensor:
+light_value = analogRead(Adc_channel);
+// turn the ledPin on
+light_value = 100 – light_value/10.24;
+if(light_value>=90) // SWITCH of the light when light is 90 percent
+{
+digitalWrite(output_pin, LOW);
+}
+else
+{
+digitalWrite(output_pin, HIGH);
+}
+
+delay(500);
+
+}
