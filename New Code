@@ -1,0 +1,16 @@
+//Here is the final code for our project.
+// As motion sensors didnt arrive on time,so we use other type of sensors as our prof gave us.
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(3, OUTPUT); 
+}
+void loop() {
+  int sensorValue = analogRead(A0);
+  if (sensorValue < 400) { // To change the point at which the light turns on.
+    digitalWrite(3, LOW);
+  }
+  else {
+    digitalWrite(3,HIGH);
+}
+}
